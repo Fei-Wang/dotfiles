@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+brew bundle --file=/dev/stdin <<'EOF'
+{{ template "Brewfile" .}}
+EOF

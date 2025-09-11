@@ -1,0 +1,38 @@
+brew "chezmoi"
+brew "fd"
+brew "ffmpeg"
+brew "fish"
+brew "fzf"
+brew "lazygit"
+brew "luarocks"
+brew "neovim"
+brew "node"
+brew "pandoc"
+brew "ripgrep"
+brew "starship"
+brew "tmux"
+brew "uv"
+cask "claude-code"
+
+{{ if eq .chezmoi.os "darwin" }}
+brew "mas"
+cask "chatgpt"
+cask "font-maple-mono-nf-cn"
+cask "iterm2"
+cask "itermai"
+mas "GarageBand", id: 682658836
+mas "Immersive Translate", id: 6447957425
+mas "iMovie", id: 408981434
+mas "Infuse", id: 1136220934
+mas "Keynote", id: 409183694
+mas "Lark", id: 6449830127
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "The Unarchiver", id: 425424353
+mas "uBlock Origin Lite", id: 6745342698
+mas "Userscripts", id: 1463298887
+mas "Vimlike", id: 1584519802
+mas "WeChat", id: 836500024
+mas "Windows App", id: 1295203466
+mas "WPS Office", id: 1468073139
+{{ end }}

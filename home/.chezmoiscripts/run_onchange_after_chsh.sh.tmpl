@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+me="$(id -un)"
+[ "$me" != "root" ] || exit 0
+
+fish_path="$(command -v fish 2>/dev/null || true)"
+[ -n "$fish_path" ] || exit 0
+
+if ! grep -qxF -- "$fish_path" /etc/shells 2>/dev/null; then
+  printf '%s\n' "$fish_path" | sudo tee -a /etc/shells >/dev/null
+fi
+
+case "$(uname -s)" in
+  Darwin) current_shell="$(dscl . -read "/Users/$me" UserShell 2>/dev/null | sed -n 's/^UserShell: //p')" ;;
+  *)      current_shell="$(getent passwd "$me" 2>/dev/null | cut -d: -f7)" ;;
+esac
+current_shell="${current_shell:-${SHELL:-}}"
+
+if [ "$current_shell" != "$fish_path" ]; then
+  chsh -s "$fish_path" "$me"
+fi

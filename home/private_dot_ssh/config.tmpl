@@ -1,0 +1,46 @@
+{{ if eq .chezmoi.os "darwin" }}
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes            # macOS 专属：把口令存入钥匙串
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes         # 只用列出的密钥，避免“乱试所有密钥”
+
+Host gameplay1
+  HostName 10.10.13.80
+  User wangfei
+  RemoteForward 7890 127.0.0.1:7890
+
+Host inference
+  HostName 10.10.13.109
+  User wangfei
+
+Host train
+  HostName 10.10.13.50
+  User wangfei
+  RemoteForward 7890 127.0.0.1:7890
+  LocalForward 5678 127.0.0.1:5678
+
+Host noname
+  HostName 10.10.13.86
+  User wangfei
+
+Host deploy
+  HostName 10.10.13.196
+  User wangfei
+
+Host translate
+  HostName 10.10.5.199
+  User ubuntu
+
+Host gameplay2
+  HostName 10.11.0.32
+  User root
+
+Host gameplay3
+  HostName 10.11.0.37
+  User root
+
+Host gameplay4
+  HostName 10.11.0.39
+  User root
+{{ end }}
