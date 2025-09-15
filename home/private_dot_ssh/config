@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.os "darwin" }}
 Host *
   AddKeysToAgent yes
   UseKeychain yes            # macOS 专属：把口令存入钥匙串
@@ -43,4 +42,3 @@ Host gameplay3 vm-ninja4-db
 Host gameplay4 vm-ninja4-stresstest
   HostName 10.11.0.39
   User root
-{{ end }}
