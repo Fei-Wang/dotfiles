@@ -17,6 +17,7 @@ cask "claude-code"
 {{ if eq .chezmoi.os "darwin" }}
 brew "mas"
 cask "chatgpt"
+cask "clash-verge-rev"
 cask "font-maple-mono-nf-cn"
 cask "iterm2"
 cask "itermai"

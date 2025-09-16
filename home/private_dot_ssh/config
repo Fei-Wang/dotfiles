@@ -7,7 +7,7 @@ Host *
 Host gameplay1 ai003
   HostName 10.10.13.80
   User wangfei
-  RemoteForward 7890 127.0.0.1:7890
+  RemoteForward 7897 127.0.0.1:7897
 
 Host inference ps
   HostName 10.10.13.109
@@ -16,7 +16,7 @@ Host inference ps
 Host train ub002server
   HostName 10.10.13.50
   User wangfei
-  RemoteForward 7890 127.0.0.1:7890
+  RemoteForward 7897 127.0.0.1:7897
   LocalForward 5678 127.0.0.1:5678
 
 Host ub001server
