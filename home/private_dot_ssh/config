@@ -4,6 +4,11 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes         # 只用列出的密钥，避免“乱试所有密钥”
 
+Host github.com
+  HostName ssh.github.com
+  Port 443
+  User git
+
 Host gameplay1 ai003
   HostName 10.10.13.80
   User wangfei
