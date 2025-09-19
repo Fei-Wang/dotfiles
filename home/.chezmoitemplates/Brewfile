@@ -1,4 +1,5 @@
 brew "chezmoi"
+brew "codex"
 brew "fd"
 brew "ffmpeg"
 brew "fish"
@@ -21,14 +22,10 @@ cask "clash-verge-rev"
 cask "font-maple-mono-nf-cn"
 cask "iterm2"
 cask "itermai"
-mas "GarageBand", id: 682658836
+cask "spotify"
 mas "Immersive Translate", id: 6447957425
-mas "iMovie", id: 408981434
 mas "Infuse", id: 1136220934
-mas "Keynote", id: 409183694
 mas "Lark", id: 6449830127
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "uBlock Origin Lite", id: 6745342698
 mas "Userscripts", id: 1463298887
