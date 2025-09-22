@@ -22,6 +22,7 @@ cask "clash-verge-rev"
 cask "font-maple-mono-nf-cn"
 cask "iterm2"
 cask "itermai"
+cask "itermbrowserplugin"
 cask "spotify"
 mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934
