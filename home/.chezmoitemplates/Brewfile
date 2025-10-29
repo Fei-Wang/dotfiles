@@ -1,5 +1,4 @@
 brew "chezmoi"
-brew "codex"
 brew "fd"
 brew "fish"
 brew "lazygit"
@@ -10,6 +9,7 @@ brew "starship"
 brew "tmux"
 brew "uv"
 cask "claude-code"
+cask "codex"
 
 {{ if eq .chezmoi.os "darwin" }}
 brew "mas"
