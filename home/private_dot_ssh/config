@@ -17,6 +17,7 @@ Host gameplay1 ai003
 Host inference ps
   HostName 10.10.13.109
   User wangfei
+  RemoteForward 1082 127.0.0.1:1082
 
 Host train ub002server
   HostName 10.10.13.50
