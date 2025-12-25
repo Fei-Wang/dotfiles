@@ -1,19 +1,21 @@
-# usage
+# dotfiles
 
-<!--toc:start-->
+My personal dotfiles.
 
-- [curl](#curl)
-- [wget](#wget)
-<!--toc:end-->
+## Bootstrap (first time)
 
-## curl
+Run once on a new machine:
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fei-Wang/dotfiles/main/bootstrap.sh)"
 ```
 
-## wget
+This bootstraps the repo and sets up the environment so the dotfiles command is available.
 
-```bash
-bash -c "$(wget -qO- https://raw.githubusercontent.com/Fei-Wang/dotfiles/main/bootstrap.sh)"
+## Update (later)
+
+After the first bootstrap, update/sync with:
+
+```fish
+dotfiles
 ```
