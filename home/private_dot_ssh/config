@@ -3,18 +3,10 @@ Host *
   UseKeychain yes            # macOS 专属：把口令存入钥匙串
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes         # 只用列出的密钥，避免“乱试所有密钥”
-
-Host aliyun dsw-557588-c5cc47d8b-mcwlf
-  HostName 8.145.60.147
-  User wangfei
-  Port 1024
-  RemoteForward 1082 127.0.0.1:1082
-
-Host aliyun-root
-  HostName 8.145.60.147
-  User root
-  Port 1024
-  IdentityFile ~/.ssh/key-midplat-ai
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+  TCPKeepAlive yes
+  # ExitOnForwardFailure yes
 
 Host github.com
   HostName ssh.github.com
