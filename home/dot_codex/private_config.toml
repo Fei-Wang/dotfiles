@@ -1,8 +1,6 @@
-preferred_auth_method = "apikey"
-model = "gpt-5.1-codex"
-approval_policy = "untrusted"
-sandbox_mode = "workspace-write"
-model_reasoning_effort = "high"
+model = "gpt-5.2"
+model_reasoning_effort = "xhigh"
+approval_policy = "on-request"
 
 [notice.model_migrations]
-"gpt-5.1-codex" = "gpt-5.2-codex"
+"gpt-5.2" = "gpt-5.2-codex"
