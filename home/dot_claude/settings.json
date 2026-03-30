@@ -6,5 +6,6 @@
     "commit": "",
     "pr": ""
   },
-  "model": "opus"
+  "model": "opus[1m]",
+  "effortLevel": "high"
 }
