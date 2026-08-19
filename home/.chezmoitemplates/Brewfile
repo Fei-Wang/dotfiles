@@ -4,6 +4,7 @@ brew "fish"
 brew "lazygit"
 brew "neovim"
 brew "node"
+brew "ripgrep"
 brew "starship"
 brew "tmux"
 brew "uv"
@@ -27,6 +28,5 @@ mas "uBlock Origin Lite", id: 6745342698
 mas "Userscripts", id: 1463298887
 mas "Vimlike", id: 1584519802
 mas "WeChat", id: 836500024
-mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
 {{ end }}
