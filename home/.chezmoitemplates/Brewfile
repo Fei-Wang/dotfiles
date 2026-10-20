@@ -1,23 +1,26 @@
 brew "chezmoi"
 brew "fd"
 brew "fish"
+brew "gh"
 brew "lazygit"
 brew "neovim"
 brew "node"
 brew "ripgrep"
+brew "rtk"
 brew "starship"
 brew "tmux"
 brew "uv"
 cask "claude-code"
-cask "codex"
 
 {{ if eq .chezmoi.os "darwin" }}
+tap "yetone/magpie-releases", "https://github.com/yetone/magpie-releases", trusted: true
 brew "mas"
 cask "font-maple-mono-nf-cn"
 cask "iterm2"
 cask "itermai"
 cask "itermbrowserplugin"
-cask "spotify"
+cask "itermcompanion"
+cask "yetone/magpie-releases/magpie-app"
 cask "wpsoffice-cn"
 mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934

@@ -17,6 +17,7 @@ Host train ub002server
   HostName 10.10.13.50
   User wangfei
   RemoteForward 1082 127.0.0.1:1082
+  RemoteForward 3425 127.0.0.1:3425
   LocalForward 5678 127.0.0.1:5678
 
 Host inference ps

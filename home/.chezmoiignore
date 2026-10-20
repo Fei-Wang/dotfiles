@@ -3,6 +3,7 @@ key.txt.age
 
 {{ if ne .chezmoi.os "darwin" }}
 .chezmoiscripts/darwin/**
+.config/magpie/**
 .ssh/config
 {{ end }}
 
